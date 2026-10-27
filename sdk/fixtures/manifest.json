@@ -1,0 +1,23 @@
+{
+  "handshake": {"key_material_utf8": "aura-sdk-vector", "certificate_der_utf8": "aura-sdk-cert", "client_nonce_byte": 43, "server_nonce_byte": 77, "key_ref_hex": "fc98c6669e7d64624a4c95e6282c3a5858417d8bd566a04f122df3f3a29f99ea", "binding_hex": "f6b5f404046a37e85eac6496f002278dbcb8a6f8dc2f9ee7080f2ca6a6d858ad", "server_proof_hex": "f8b78319bd6ce4741c3e9615d1840a7d3a6ac5de8e37449f5f586063f47b85a1", "client_proof_hex": "313009f3da9e8181207fb0d3e10df93352044b59b3ff3af155f4440559e50cf0", "tcp_binding_server_proof_hex": "d9e06e6e67342d47c83814245d2b4f6a75956267b48358727c232454c6529104"},
+  "hello": {"protocol_version": 1, "streams": 5, "codecs": 5, "key_material_utf8": "aura-sdk-vector", "client_nonce_hex": "00"},
+  "hello_filtered": {"protocol_version": 1, "streams": 5, "codecs": 5, "key_material_utf8": "aura-sdk-vector", "client_nonce_hex": "00", "filter": "{\"filters\":[{\"name\":\"desk\",\"spec\":{\"is_vote\":{\"value\":false}}}]}"},
+  "hello_ack": {"protocol_version": 1, "granted": 1, "session_id": "1885667171979194497", "codec": 2, "keepalive_ms": 20000},
+  "error": {"code": 5, "detail": "the node requires a compressed stream; offer zstd in the greeting"},
+  "lag": {"dropped": "7777", "resume_seq": "555000"},
+  "filter_ack": {"accepted": false, "cost": 9877, "detail": "the filter set exceeds this key cost budget"},
+  "slot_start": {"slot": "412500101", "parent_slot": "412500100", "leader_byte": 57, "shred_version": 61207, "rx_ts_ns": "1900000100000", "source": 6},
+  "slot_start_bare": {"slot": "412500102", "parent_slot": null, "leader": null, "shred_version": 61207, "rx_ts_ns": "1900000100001", "source": 0},
+  "slot_end": {"slot": "412500101", "parent_slot": "412500100", "data_shreds": 2048, "fec_sets": 42, "recovered_sets": 7, "missing_shreds": 2, "complete": true, "end_ts_ns": "1900000500000"},
+  "entry": {"slot": "412500101", "parent_slot": "412500100", "rx_ts_ns": "1900000100500", "num_hashes": "64", "tx_count": "5", "hash_byte": 78, "fec_set_index": 96, "entry_index": 12, "verification": "stale-schedule"},
+  "duplicate": {"slot": "412500103", "index": 17, "first_source": 4, "second_source": 5, "detected_ns": "1900000100900", "is_data": true, "first_signature_byte": 209, "second_signature_byte": 226},
+  "tx_simple": {"slot": "412500101", "parent_slot": "412500100", "rx_ts_ns": "1900000100000", "emit_ts_ns": "1900000103500", "leader_byte": 57, "fec_set_index": 96, "entry_index": 12, "tx_index": 3, "source_id": 6, "is_vote": false, "recovered": false, "verification": "verified", "account_count": 3, "instruction_count": 1, "signature_count": 1, "message_version": 0, "lookup_count": 0, "required_signatures": 1, "readonly_signed": 0, "readonly_unsigned": 1, "signature_byte": 93, "blockhash_byte": 110, "instruction_data": [5, 6, 7, 8], "instruction_accounts": [0, 1], "program_id_index": 0, "has_raw_tx": false},
+  "tx_full": {"account_count": 6, "instruction_count": 1, "signature_count": 1, "lookup_count": 2, "is_vote": true, "recovered": true, "has_raw_tx": true, "raw_tx_len": 413, "instruction_data_len": 40, "lookup_writable": [1], "lookup_readonly": [2], "lookup0_key_byte": 192, "lookup1_key_byte": 193, "message_version": 0},
+  "tx_legacy": {"message_version": 255, "account_count": 2, "instruction_count": 1, "signature_count": 1, "lookup_count": 0, "leader": null, "verification": "unknown-leader", "instruction_data": [4, 3, 2], "program_id_index": 1},
+  "tx_malformed": {"signature_count": 0, "account_count": 2, "instruction_count": 1, "lookup_count": 0, "message_version": 0, "program_id_index": 9, "note": "unsigned, and names a program index past its own account list; every SDK must decode it without throwing"},
+  "frame_plain": {"kind": 1, "seq": "7", "compressed": false},
+  "frame_zstd": {"kind": 1, "seq": "8", "compressed": true},
+  "frame_matched": {"kind": 1, "seq": "11", "compressed": false, "matched": 9, "matched_indices": [0, 3]},
+  "tx_simple_len": 320,
+  "protocol_version": 1
+}

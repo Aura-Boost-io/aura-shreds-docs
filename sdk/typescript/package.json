@@ -1,0 +1,38 @@
+{
+  "name": "@aura-shreds/sdk",
+  "version": "0.1.0",
+  "description": "TypeScript client for the aura-shreds Solana shred stream",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=22.15.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "tsc -p tsconfig.test.json && node --test dist-test/test/*.test.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  },
+  "keywords": [
+    "solana",
+    "shred",
+    "aura-shreds",
+    "streaming"
+  ]
+}
